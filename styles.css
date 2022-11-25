@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Kata;
+    src: url(geo-gza.ttf);
+}
+*{
+
+    font-family: Kata;
+    /* background-color: rgba(233, 210, 230, 0.998); */
+}
+
+body{
+    background-image: url(img/wallpaper_eur.jpg);
+    padding: 0;
+    margin: 0;
+}
+
+/* .spinner{
+    width: 10em;
+    height: 10em;
+    border-top: 1em solid #1aff00;
+    border-right: 1em solid transparent;
+    border-radius: 50%;
+    margin: auto;
+    animation: spinner 2s linear infinite;
+}
+
+.circle{
+    width: 1em;
+    height: 1em;
+    background-color: #1aff00;
+    border-radius: 50%;
+    margin-left: 8.5em;
+    margin-top: 0.5em;
+} */
+
+@keyframes spinner{
+    100% { transform: rotate(360deg);}
+}
+
+a{
+    text-decoration: none;
+}
+
+.caption{
+    padding-top: 2%;
+    font-size: 5vw;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar{
+    width: 100%;
+    align-items: center;
+    height: fit-content;
+    text-align: center;
+}
+
+ul{
+    /* border: 0.1em solid ; */
+    color: hotpink;
+}
+
+li{
+    padding: 5px 1.5em 0  ;
+    display: inline-block;
+}
+
+ul li a{
+    color: white;
+    transition: 0.1s;
+}
+
+ul li a:hover{
+    color: rgb(255, 165, 127);
+}
+
+
+.container{
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: wrap; 
+    flex-flow: row wrap; 
+    justify-content: center;
+}
+
+.cat-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    text-align: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    margin: 10px;
+    border: 0.1em solid rgba(255, 137, 251, 0.743);
+    border-radius: 10px;
+    border-width: 10px;
+}
+
+.cat-card img{
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 5px;
+    width: 15em;
+    height: 20em;
+    object-fit: cover;
+    object-position: 0 70%;
+    border-radius: 15px;
+}
+
+.cat-card span:hover{
+    color: rgba(0, 16, 49, 0.583);
+}
+
+.cat-card:hover{
+    background-color: rgba(242, 167, 255, 0.514);
+}
+
+
+
+  @media screen and (max-width: 891px) {
+    .cat-card {
+       width: 100%;
+    }
+ }
+
+ .cat-card img:hover{
+    width: 16em;
+ }
+
+.rukaze{
+    size: 50px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+  #footer {
+    background-color: rgba(255, 192, 203, 0.317);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
+
+.page-control{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.page-control h3{
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: inline-block;
+    margin: 20px;
+    font-size: 1em;
+}
+
+.page-control a{
+    text-decoration: none;
+}
+
